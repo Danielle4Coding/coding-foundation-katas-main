@@ -1,15 +1,6 @@
-/** function filterApiData(apiData, mandatoryKeys) {
-  return apiData.filter(function (obj) {
-    return mandatoryKeys.every(function (key) {
-      return obj.hasOwnProperty(key);
-    });
-  });
-}
-**/
-
 function filterApiData(apiData, mandatoryKeys) {
   /* declare a variable to save a new array that contains
-  only the elements filtered from the array apiData
+  only those elements filtered from the array apiData
    */
   const filteredData = apiData.filter(function (item) {
     /* use Object.keys() to receive an array of the keys 
@@ -64,5 +55,14 @@ function filterApiData(apiData, mandatoryKeys) {
   // if array includes mandatoryKeys[1], return result etc
 
   console.log(filterApiData());
+}
+*/
+
+/* function filterApiData(apiData, mandatoryKeys) {
+  return apiData.filter(function (obj) {
+    return mandatoryKeys.every(function (key) {
+      return obj.hasOwnProperty(key);
+    });
+  });
 }
 */
