@@ -5,12 +5,12 @@ function zipStrings(strA, strB) {
   // die Strings in Arrays konvertieren
   arrayA = Array.from(strA);
   arrayB = Array.from(strB);
-  /* in ArrayA nach dem ersten (i=1) 
+  /* in ArrayA nach dem ersten Element(i=1) 
   und dann nach jedem zweiten Element (i += 2)
    ein Element aus ArrayB einfügen (arrayB[indexB]) */
   for (let i = 1; i < arrayA.length; i += 2) {
     arrayA.splice(i, 0, arrayB[indexB]);
-    // und zwar da immer das nächste:
+    // und dann immer das darauffolgende:
     indexB++;
   }
   // wenn ArrayB größer als indexB ist, den Rest von ArrayB einfügen
